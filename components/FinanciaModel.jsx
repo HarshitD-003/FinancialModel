@@ -109,7 +109,7 @@ const FinancialModel = () => {
 
     try {
       console.log(formData);
-      const response = await axios.post('http://localhost:3000/uc_calculate_irr', formData, {
+      const response = await axios.post('https://fm-eight.vercel.app/api/uc_calculate_irr', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
