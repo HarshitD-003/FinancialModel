@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://fm-eight.vercel.app',
     methods: ['GET', 'POST'],// Adjust the allowed methods as needed
     allowedHeaders: ['Content-Type'], // Adjust the allowed headers as needed
 }));
@@ -182,7 +182,7 @@ const YES = (ebwTokenAmount,bookingAmount,startDate1,startDate2,totalAmount,intr
 app.use(bodyParser.json());
 
 //Route 1
-app.post('/calculate_xirr', (req, res) => {
+app.post('/api/calculate_xirr', (req, res) => {
     try {
         const { cashflows, dates } = req.body;
 
@@ -202,7 +202,7 @@ app.post('/calculate_xirr', (req, res) => {
 });
 
 //Route 2
-app.post('/calculate_irr', (req, res) => {
+app.post('/api/calculate_irr', (req, res) => {
     try {
         const {
             initial_investment,
@@ -283,7 +283,7 @@ app.post('/calculate_irr', (req, res) => {
 });
 
 //Route 3
-app.post('/uc_calculate_irr', (req, res) => {
+app.post('/api/uc_calculate_irr', (req, res) => {
     try {
       const {
           ebwTokenAmount,
