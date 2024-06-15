@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors({
-    origin: 'https://fm-eight.vercel.app',
+    origin: 'true-int.vercel.app',
     methods: ['GET', 'POST'],// Adjust the allowed methods as needed
     allowedHeaders: ['Content-Type'], // Adjust the allowed headers as needed
 }));
