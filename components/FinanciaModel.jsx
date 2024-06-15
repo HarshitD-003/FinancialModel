@@ -112,7 +112,7 @@ const FinancialModel = () => {
       const response = await axios.post('https://fm-eight.vercel.app/api/uc_calculate_irr', formData, {
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': 'https://fm-eight.vercel.app,,
+          'Access-Control-Allow-Origin': 'https://fm-eight.vercel.app',
         },
       });
       if (response.status !== 200) {
