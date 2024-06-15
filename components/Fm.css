@@ -1,0 +1,7 @@
+.Mui-disabled{
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.Mui-disabled:hover{
+    cursor: not-allowed;
+}

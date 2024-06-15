@@ -4,6 +4,7 @@ import { Tabs, Tab, Box, Typography, CssBaseline } from '@mui/material';
 import Irr1 from '../components/Irr1';
 import Irr2 from '../components/Irr2';
 import Irr3 from '../components/Irr3';
+import FinancialModel from '../components/FinanciaModel';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -32,27 +33,28 @@ function App() {
   };
 
   return (
-    <div>
-    <CssBaseline />
-      <Box sx={{ width: '100%' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="IRR Calculation Tabs">
-          <Tab label="IRR Calculation 1" />
-          <Tab label="IRR Calculation 2" />
-          <Tab label="IRR Calculation 3" />
-          {/* Add more tabs as needed */}
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        <Irr1 />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Irr2 />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Irr3 />
-      </TabPanel>
-      {/* Add more TabPanel components as needed */}
-    </div>
+    // <div>
+    // <CssBaseline />
+    //   <Box sx={{ width: '100%' }}>
+    //     <Tabs value={value} onChange={handleChange} aria-label="IRR Calculation Tabs">
+    //       <Tab label="IRR Calculation 1" />
+    //       <Tab label="IRR Calculation 2" />
+    //       <Tab label="IRR Calculation 3" />
+    //       {/* Add more tabs as needed */}
+    //     </Tabs>
+    //   </Box>
+    //   <TabPanel value={value} index={0}>
+    //     <Irr1 />
+    //   </TabPanel>
+    //   <TabPanel value={value} index={1}>
+    //     <Irr2 />
+    //   </TabPanel>
+    //   <TabPanel value={value} index={2}>
+    //     <Irr3 />
+    //   </TabPanel>
+    //   {/* Add more TabPanel components as needed */}
+    // </div>
+    <FinancialModel />
   );
 }
 
